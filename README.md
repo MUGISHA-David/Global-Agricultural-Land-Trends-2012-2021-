@@ -4,7 +4,7 @@
 **Course:** INSY 8413 | Introduction to Big Data Analytics  
 **Academic Year:** 2024-2025, Semester III  
 **Instructor:** Eric Maniraguha  
-**Student:** [Your Name]  
+**Student:** MUGISHA David  
 **Date:** July 26, 2025
 
 ## 📊 Project Summary
@@ -40,7 +40,7 @@ This analysis addresses critical questions about:
 
 ## 🐍 Python Analytics Implementation
 
-### 1. Data Cleaning & Preprocessing
+### Data Cleaning & Preprocessing
 - **Column Selection:** Extracted relevant columns: REF_AREA, Reference area, TIME_PERIOD, OBS_VALUE
 - **Column Renaming:** Standardized to: Country_Code, Country, Year, Agri_Land_Area_Thousands_Ha
 - **Missing Values:** Complete removal of rows with null values using `dropna()`
@@ -49,7 +49,7 @@ This analysis addresses critical questions about:
   - Agricultural land area: Converted to float
 - **Data Validation:** Ensured data integrity through type checking and summary statistics
 
-### 2. Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 - **Descriptive Statistics:** Generated comprehensive summary statistics for agricultural land areas
 - **Time Series Analysis:** Analyzed trends for key countries (Australia, Canada, Chile, Czech Republic)
 - **Distribution Analysis:** Created box plots to understand land area distribution by year
@@ -60,14 +60,14 @@ This analysis addresses critical questions about:
 - Box plots for distribution analysis by year
 - Linear regression fit visualizations
 
-### 3. Machine Learning Model
+### Machine Learning Model
 - **Model Type:** ✅ **Regression** (Linear Regression)
 - **Algorithm Used:** Scikit-learn LinearRegression
 - **Features Selected:** Year (temporal predictor)
 - **Target Variable:** Agricultural Land Area (Thousands of Hectares)
 - **Training Process:** 80/20 train-test split with random_state=42
 
-### 4. Model Evaluation
+### Model Evaluation
 **Evaluation Metrics Used:**
 - ✅ **RMSE** (Root Mean Square Error)
 - ✅ **R-squared** (Coefficient of Determination)
@@ -77,7 +77,7 @@ This analysis addresses critical questions about:
 - Custom prediction function for future year forecasting
 - Visual model validation through scatter plots with regression lines
 
-### 5. Innovation & Custom Features
+### Innovation & Custom Features
 - **Custom Prediction Function:** `predict_land_area(country_code, year_to_predict)`
   - Enables prediction for any country and future year
   - Automatic model training on country-specific data
@@ -116,73 +116,6 @@ This analysis addresses critical questions about:
    - ✅ **DAX formulas** for calculated measures
    - ✅ **Custom tooltips** with detailed country information
    - ✅ **Bookmarks** for different view perspectives
-
----
-
-## 📁 Repository Structure
-
-```
-agricultural-land-analysis/
-│
-├── data/
-│   ├── raw/
-│   │   └── OECD.TAD.ARP,DSD_AGRI_ENV@DF_AGLAND,1.0+.A.TOTAGR_LAND.....csv
-│   ├── processed/
-│   │   └── cleaned_agri_land_data.csv
-│   └── README.md
-│
-├── notebooks/
-│   ├── 01_agricultural_land_analysis.ipynb    # Main analysis notebook
-│   └── requirements.txt                       # Python dependencies
-│
-├── src/
-│   ├── agricultural_analysis.py               # Main Python script
-│   └── prediction_functions.py                # Custom prediction utilities
-│
-├── dashboards/
-│   ├── agricultural_trends_dashboard.pbix     # Power BI dashboard
-│   └── dashboard_screenshots/
-│       ├── main_dashboard.png
-│       ├── country_trends.png
-│       ├── global_map_view.png
-│       ├── interactive_filters.png
-│       └── prediction_insights.png
-│
-├── visualizations/
-│   ├── time_series_plots/
-│   │   ├── multi_country_trends.png
-│   │   └── australia_trend_detail.png
-│   ├── distribution_plots/
-│   │   └── yearly_distribution_boxplot.png
-│   └── model_plots/
-│       ├── regression_fit_australia.png
-│       └── prediction_visualization.png
-│
-├── results/
-│   ├── model_performance_metrics.txt
-│   ├── country_predictions_2025.csv
-│   └── summary_statistics.txt
-│
-├── presentation/
-│   ├── agricultural_analysis_presentation.pptx
-│   └── agricultural_analysis_presentation.pdf
-│
-├── screenshots/
-│   ├── python_analysis/
-│   │   ├── data_preprocessing_output.png
-│   │   ├── eda_visualizations.png
-│   │   ├── model_training_results.png
-│   │   └── prediction_function_demo.png
-│   └── powerbi_dashboard/
-│       ├── dashboard_overview.png
-│       ├── interactive_features.png
-│       ├── country_drill_down.png
-│       └── trend_analysis_view.png
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
 
 ---
 
@@ -444,205 +377,29 @@ except Exception as e:
 
 ---
 
-## 📸 Screenshots & Visual Documentation
+## 📸 Screenshots
 
 ### Python Analysis Results
-*Add your screenshots in the designated folders and update the paths below*
 
-#### 1. Data Preprocessing Output
-![Data Preprocessing](screenshots/python_analysis/data_preprocessing_output.png)
+#### Data Preprocessing Output
 
-**What to capture:**
-- DataFrame info output showing data types and non-null counts
-- First 5 rows of cleaned data
-- Summary statistics output
-- Confirmation message of cleaned data being saved
+![Data proccessing](https://github.com/user-attachments/assets/5633a5b9-b97b-4370-a79f-b8e0174a40b7)
 
----
 
-#### 2. Exploratory Data Analysis Visualizations
-![EDA Time Series](screenshots/python_analysis/eda_time_series_plot.png)
 
-![EDA Box Plot](screenshots/python_analysis/eda_boxplot_distribution.png)
+#### Exploratory Data Analysis Visualizations
+<img width="1031" height="701" alt="agriculture land area trends" src="https://github.com/user-attachments/assets/34a750f8-190b-4531-8c59-c7f5af66e185" />
+<img width="1186" height="722" alt="distribution agriculture land area" src="https://github.com/user-attachments/assets/2592cc4f-6431-4745-a002-1f8d3d2f6209" />
+<img width="876" height="547" alt="linear regression model" src="https://github.com/user-attachments/assets/5f191006-ab9c-4345-b1cb-c9ea5a6fcd1f" />
 
-**What to capture:**
-- Multi-country time series line plot showing agricultural trends
-- Box plot showing distribution of agricultural land by year
-- Any additional exploratory plots you create
 
----
 
-#### 3. Model Training and Results
-![Model Training Output](screenshots/python_analysis/model_training_results.png)
-
-![Linear Regression Plot](screenshots/python_analysis/linear_regression_visualization.png)
-
-**What to capture:**
-- Model performance metrics (RMSE and R-squared values)
-- Linear regression scatter plot with fit line
-- Model training success messages
-
----
-
-#### 4. Prediction Function Demonstration
-![Prediction Function Demo](screenshots/python_analysis/prediction_function_demo.png)
-
-**What to capture:**
-- Example predictions for Australia and Canada in 2025
-- Function output showing predicted values
-- Any additional prediction examples you run
-
----
-
-#### 5. Console Output Summary
-![Complete Analysis Output](screenshots/python_analysis/complete_console_output.png)
-
-**What to capture:**
-- Complete console output from running the entire script
-- All print statements and results in sequence
-- Final summary of analysis completion
-
----
 
 ### Power BI Dashboard Views
-*Add your Power BI dashboard screenshots here*
 
-#### 1. Main Dashboard Overview
-![Dashboard Main View](screenshots/powerbi_dashboard/dashboard_main_overview.png)
+####  Main Dashboard Overview
 
-**What to capture:**
-- Complete dashboard showing all main visualizations
-- Global map with agricultural land data
-- Key performance indicators (KPIs)
-- Overall layout and design
-
----
-
-#### 2. Interactive Features Demonstration
-![Interactive Slicers](screenshots/powerbi_dashboard/interactive_slicers_filters.png)
-
-![Drill Down Features](screenshots/powerbi_dashboard/drill_down_capabilities.png)
-
-**What to capture:**
-- Country selection slicers in action
-- Year range filters being used
-- Drill-down functionality demonstration
-- Interactive tooltips and hover effects
-
----
-
-#### 3. Country-Specific Analysis Views
-![Country Analysis Australia](screenshots/powerbi_dashboard/country_analysis_australia.png)
-
-![Country Analysis Canada](screenshots/powerbi_dashboard/country_analysis_canada.png)
-
-**What to capture:**
-- Detailed country-specific views
-- Country comparison visualizations
-- Trend analysis for individual countries
-- Country-specific KPIs and metrics
-
----
-
-#### 4. Advanced Visualizations
-![Advanced Charts](screenshots/powerbi_dashboard/advanced_visualizations.png)
-
-![Custom DAX Measures](screenshots/powerbi_dashboard/dax_calculations_demo.png)
-
-**What to capture:**
-- Advanced chart types you implemented
-- Custom DAX formulas in action
-- AI-powered insights (if used)
-- Custom tooltips and bookmarks
-
----
-
-#### 5. Mobile/Responsive View
-![Mobile Dashboard](screenshots/powerbi_dashboard/mobile_responsive_view.png)
-
-**What to capture:**
-- Dashboard optimized for mobile viewing
-- Responsive design elements
-- Mobile-specific interactions
-
----
-
-### Code Execution Screenshots
-*Document your development process*
-
-#### Development Environment
-![Jupyter Notebook Setup](screenshots/development/jupyter_notebook_environment.png)
-
-![Python Environment](screenshots/development/python_environment_setup.png)
-
-**What to capture:**
-- Jupyter notebook interface with your code
-- Python environment and library installations
-- Development setup and configuration
-
----
-
-### Data Visualization Gallery
-*Showcase all visualizations created*
-
-#### Python Matplotlib/Seaborn Plots
-![All Python Visualizations](screenshots/visualizations/python_plots_collection.png)
-
-#### Power BI Chart Collection
-![All Power BI Charts](screenshots/visualizations/powerbi_charts_collection.png)
-
-**What to capture:**
-- Collection of all charts and graphs created
-- Before/after comparisons of visualizations
-- Different chart types and styles used
-
----
-
-## 📁 Screenshot Organization Structure
-
-```
-screenshots/
-│
-├── python_analysis/
-│   ├── data_preprocessing_output.png
-│   ├── eda_time_series_plot.png
-│   ├── eda_boxplot_distribution.png
-│   ├── model_training_results.png
-│   ├── linear_regression_visualization.png
-│   ├── prediction_function_demo.png
-│   └── complete_console_output.png
-│
-├── powerbi_dashboard/
-│   ├── dashboard_main_overview.png
-│   ├── interactive_slicers_filters.png
-│   ├── drill_down_capabilities.png
-│   ├── country_analysis_australia.png
-│   ├── country_analysis_canada.png
-│   ├── advanced_visualizations.png
-│   ├── dax_calculations_demo.png
-│   └── mobile_responsive_view.png
-│
-├── development/
-│   ├── jupyter_notebook_environment.png
-│   └── python_environment_setup.png
-│
-├── visualizations/
-│   ├── python_plots_collection.png
-│   └── powerbi_charts_collection.png
-│
-└── README.md (Documentation for screenshots)
-```
-
-### Screenshot Guidelines
-
-1. **High Quality:** Use high resolution (at least 1920x1080)
-2. **Clear Content:** Ensure all text and numbers are readable
-3. **Full Context:** Capture complete windows/interfaces
-4. **Consistent Naming:** Follow the naming convention shown above
-5. **Professional Appearance:** Clean, organized desktop/environment
-6. **Annotations:** Consider adding callouts or highlights for key features
-
----
+![power BI Dashboard](https://github.com/user-attachments/assets/f6091439-c515-41a3-806c-d8a47af4e037)
 
 ## 📚 References & Data Sources
 
@@ -664,39 +421,5 @@ screenshots/
 - OECD Agricultural Environmental Indicators Documentation
 - Python Data Science Handbook
 - Power BI Best Practices Guide
-
----
-
-## 📞 Contact Information
-
-**Student:** [Your Name]  
-**Email:** [Your Email]  
-**GitHub:** [Your GitHub Profile]  
-**Project Repository:** [Repository Link]
-
----
-
-## 📜 Academic Integrity Statement
-
-This project represents original work completed in accordance with the academic integrity guidelines of the Introduction to Big Data Analytics course (INSY 8413). All data sources have been properly cited, and the analysis methodology follows established data science practices. The code implementation is original, with appropriate use of standard libraries and documented techniques. Any external resources or inspirations have been properly attributed.
-
-**Project Submission Date:** July 26, 2025  
-**GitHub Repository:** [Your Repository Link]  
-**Instructor:** Eric Maniraguha
-
----
-
-## 🏆 Project Highlights
-
-- ✅ **Complete Data Pipeline:** Raw data → Cleaned data → Analysis → Predictions
-- ✅ **Robust Error Handling:** Comprehensive exception handling and data validation
-- ✅ **Scalable Architecture:** Reusable functions for multiple countries and years
-- ✅ **Professional Visualization:** High-quality plots and interactive dashboard
-- ✅ **Practical Applications:** Real-world agricultural planning implications
-- ✅ **Technical Innovation:** Custom prediction system with user-friendly interface
-
----
-
-*"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters." — Colossians 3:23 (NIV)*
 
 **Final Note:** This analysis contributes to understanding global food security challenges and supports evidence-based agricultural policy decisions through data-driven insights.
